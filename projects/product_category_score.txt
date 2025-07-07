@@ -1,0 +1,7 @@
+SELECT 
+  product_category_name,
+  AVG(review_score) 
+FROM `project-re-learning.Data1.combined_data`
+WHERE product_category_name IS NOT NULL
+GROUP BY product_category_name
+ORDER BY AVG(review_score) DESC
