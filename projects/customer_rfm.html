@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formatted SQL Query - RFM Analysis</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: #f8f8f2;
+      font-family: monospace;
+      padding: 20px;
+    }
+    pre {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .keyword {
+      color: #66d9ef;
+      font-weight: bold;
+    }
+    .function {
+      color: #a6e22e;
+    }
+    .string {
+      color: #e6db74;
+    }
+    .number {
+      color: #ae81ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>SQL Query - RFM Segmentation</h1>
+  <pre><code>
+<span class="keyword">WITH</span> rfm_base AS (
+  <span class="keyword">SELECT</span>
+    customer_id,
+    DATE_DIFF(DATE(<span class="string">'2018-09-03'</span>), DATE(MAX(order_purchase_timestamp)), DAY) AS recency,
+    COUNT(DISTINCT order_id) AS frequency,
+    ROUND(SUM(payment_value), 2) AS monetary
+  <span class="keyword">FROM</span>
+    `project-re-learning.Data1.combined_data`
+  <span class="keyword">WHERE</span>
+    order_status = <span class="string">'delivered'</span>
+  <span class="keyword">GROUP BY</span>
+    customer_id
+),
+
+rfm_score AS (
+  <span class="keyword">SELECT</span>
+    customer_id,
+    recency,
+    frequency,
+    monetary,
+
+    NTILE(5) OVER (<span class="keyword">ORDER BY</span> recency ASC) AS r_score,
+    NTILE(5) OVER (<span class="keyword">ORDER BY</span> frequency DESC) AS f_score,
+    NTILE(5) OVER (<span class="keyword">ORDER BY</span> monetary DESC) AS m_score
+
+  <span class="keyword">FROM</span> rfm_base
+)
+
+<span class="keyword">SELECT</span> *,
+       CONCAT(r_score, f_score, m_score) AS rfm_segment
+<span class="keyword">FROM</span> rfm_score
+<span class="keyword">ORDER BY</span> rfm_segment DESC
+  </code></pre>
+</body>
+</html>
