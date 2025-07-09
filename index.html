@@ -1,53 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Aldi’s Data Analytics Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f6fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      background-color: #2f3640;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .project-card {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #273c75;
+    }
+
+    .project-card p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #0097e6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
+
+<header>
   <h1>Welcome to My Data Analytics Portfolio</h1>
   <p>Projects using SQL and Tableau</p>
+</header>
 
-  <h2>Projects</h2>  
-<h3>📊 File Join and Removing Duplicates</h3>
-<p>Joining and combining individual files that have already been cleaned by removing duplicates.</p>
+<div class="container">
 
-<ul>
-  <li>📄 <a href="projects/join_duplicate_query.html" target="_blank">SQL Query (Text)</a></li>
-  <li>📊 <a href="projects/FINAL%20DATA.xlsx" target="_blank">Final Data Download (Excel)</a></li>
-</ul>
-  
-<h3>🧠 SQL Analysis: Product Category Review Score</h3>
-<p>
-  This query is used to calculate all time product review score/rating.<br>
-  <li>👉 <a href="https://docs.google.com/spreadsheets/d/1ArwjC95ZEY0t9JHOenbKGsU9CnDUfWRt32Pvc3foCkE/edit?usp=sharing" target="_blank">Google Sheet Result</a>
-</p>
-  <li>📄 <a href="projects/product_category_score.html" target="_blank">SQL Query (Text)</a></li>
+  <div class="project-card">
+    <h3>📊 File Join and Removing Duplicates</h3>
+    <p>Joining and combining individual files that have already been cleaned by removing duplicates.</p>
+    <ul>
+      <li>📄 <a href="projects/join_duplicate_query.html" target="_blank">SQL Query (Text)</a></li>
+      <li>📊 <a href="projects/FINAL%20DATA.xlsx" target="_blank">Final Data Download (Excel)</a></li>
+    </ul>
+  </div>
 
-  
-<h3>🧠 SQL Analysis: Average Seller Shipment Delay</h3>
-<p>
-  This query is used to calculate the average shipment delay for each seller ID.<br>
-  <li>👉 <a href="https://docs.google.com/spreadsheets/d/1slaP5UJ9w5vcJDjXsmkRxRkcCEjywEE3FrujcGJ7goY/edit?usp=sharing" target="_blank">Google Sheet Result</a>
-  <li>📄 <a href="projects/avg_shipment_delay.html" target="_blank">SQL Query (Text)</a></li>
-</p>
+  <div class="project-card">
+    <h3>🧠 SQL Analysis: Product Category Review Score</h3>
+    <p>This query is used to calculate all-time product review score/rating.</p>
+    <ul>
+      <li>👉 <a href="https://docs.google.com/spreadsheets/d/1ArwjC95ZEY0t9JHOenbKGsU9CnDUfWRt32Pvc3foCkE/edit?usp=sharing" target="_blank">Google Sheet Result</a></li>
+      <li>📄 <a href="projects/product_category_score.html" target="_blank">SQL Query (Text)</a></li>
+    </ul>
+  </div>
 
+  <div class="project-card">
+    <h3>🧠 SQL Analysis: Average Seller Shipment Delay</h3>
+    <p>This query is used to calculate the average shipment delay for each seller ID.</p>
+    <ul>
+      <li>👉 <a href="https://docs.google.com/spreadsheets/d/1slaP5UJ9w5vcJDjXsmkRxRkcCEjywEE3FrujcGJ7goY/edit?usp=sharing" target="_blank">Google Sheet Result</a></li>
+      <li>📄 <a href="projects/avg_shipment_delay.html" target="_blank">SQL Query (Text)</a></li>
+    </ul>
+  </div>
 
-<h3>🧠 SQL Analysis: Customer RFM</h3>
-<p>
-  This Query is use to determine Recency, Frequency, and Monetary score from each unique customers as well as their overall score.<br>
-  <li>👉 <a href="https://docs.google.com/spreadsheets/d/14sLlyIX4YRjvDnWCqdJaZU5srmCfyRhUfG1b2ZO2H80/edit?usp=sharing" target="_blank">Google Sheet Result</a>
-  <li>📄 <a href="projects/customer_rfm.html" target="_blank">SQL Query (Text)</a></li>
-</p>
+  <div class="project-card">
+    <h3>🧠 SQL Analysis: Customer RFM</h3>
+    <p>This query is used to determine Recency, Frequency, and Monetary score from each unique customer as well as their overall score.</p>
+    <ul>
+      <li>👉 <a href="https://docs.google.com/spreadsheets/d/14sLlyIX4YRjvDnWCqdJaZU5srmCfyRhUfG1b2ZO2H80/edit?usp=sharing" target="_blank">Google Sheet Result</a></li>
+      <li>📄 <a href="projects/customer_rfm.html" target="_blank">SQL Query (Text)</a></li>
+    </ul>
+  </div>
 
-  
+  <div class="project-card">
+    <h3>📊 Brazilian E-Commerce Dashboard</h3>
+    <p>Dashboard analisis customer, delivery, dan sales dari dataset Olist.</p>
+    <ul>
+      <li>👉 <a href="https://public.tableau.com/app/profile/aldi.aditya.nasution/viz/BrazilianE-CommerceDashboard_17512777652710/Products#1" target="_blank">Lihat Dashboard</a></li>
+    </ul>
+  </div>
 
-  <h3>📊 Brazilian E-Commerce Dashboard</h3>
-  <p>
-    Dashboard analisis customer, delivery, dan sales dari dataset Olist.<br>
-  <li>👉 <a href="https://public.tableau.com/app/profile/aldi.aditya.nasution/viz/BrazilianE-CommerceDashboard_17512777652710/Products#1" target="_blank">
-      Lihat Dashboard
-    </a>
-  </p>
+</div>
+
+<footer>
+  © 2025 Aldi Nasution | Data Analytics Portfolio
+</footer>
 
 </body>
 </html>
