@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formatted SQL Query</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: #f8f8f2;
+      font-family: monospace;
+      padding: 20px;
+    }
+    pre {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap; /* supaya kode wrap dan nggak horizontal scroll */
+      word-wrap: break-word;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    /* Highlight keywords SQL sederhana */
+    .keyword {
+      color: #66d9ef;
+      font-weight: bold;
+    }
+    .comment {
+      color: #75715e;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>SQL Query</h1>
+  <pre><code>
+<span class="keyword">SELECT</span> *
+<span class="keyword">FROM</span> (
+  <span class="keyword">SELECT</span> *,
+         ROW_NUMBER() OVER(PARTITION BY order_id <span class="keyword">ORDER BY</span> order_purchase_timestamp) AS row_num
+<span class="keyword">FROM</span> (
+ <span class="keyword">SELECT</span>
+  o.order_id,
+  o.order_status,
+  o.order_purchase_timestamp,
+  o.order_delivered_customer_date,
+  o.order_estimated_delivery_date,
+  
+  <span class="comment">-- customer</span>
+  c.customer_id,
+  c.customer_city,
+  c.customer_state,
+  <span class="comment">-- payment</span>
+  p.payment_type,
+  p.payment_value,
+  <span class="comment">-- review</span>
+  r.review_score,
+  <span class="comment">-- item</span>
+  i.product_id,
+  i.seller_id,
+  i.price,
+  i.freight_value,
+  <span class="comment">-- product</span>
+  pr.product_category_name,
+  <span class="comment">-- seller</span>
+  s.seller_city,
+  s.seller_state
+
+<span class="keyword">FROM</span>
+  `project-re-learning.Data1.orders` o
+
+<span class="comment">--JOIN TO ITEMS</span>
+<span class="keyword">LEFT JOIN</span> `project-re-learning.Data1.order_items` i
+      <span class="keyword">ON</span>  o.order_id = i.order_id
+
+<span class="comment">--JOIN TO PAYMENTS</span>
+<span class="keyword">LEFT JOIN</span> `project-re-learning.Data1.order_payments` p
+      <span class="keyword">ON</span> o.order_id = p.order_id
+
+<span class="comment">--JOIN TO REVIEWS</span>
+<span class="keyword">LEFT JOIN</span> `project-re-learning.Data1.reviews` r
+      <span class="keyword">ON</span> o.order_id = r.order_id
+
+<span class="comment">--JOIN TO CUSTOMERS</span>
+<span class="keyword">LEFT JOIN</span> `project-re-learning.Data1.Customers` c
+      <span class="keyword">ON</span> o.customer_id = c.customer_id
+
+<span class="comment">--JOIN TO PRODUCTS</span>
+<span class="keyword">LEFT JOIN</span> `project-re-learning.Data1.products` pr
+      <span class="keyword">ON</span> i.product_id = pr.product_id
+
+<span class="comment">--JOIN TO SELLERS</span>
+<span class="keyword">LEFT JOIN</span> `project-re-learning.Data1.sellers` s
+      <span class="keyword">ON</span> i.seller_id = s.seller_id
+
+<span class="keyword">WHERE</span> o.order_purchase_timestamp IS NOT NULL
+  <span class="keyword">AND</span> i.price IS NOT NULL
+  <span class="keyword">AND</span> p.payment_value IS NOT NULL
+)
+)
+<span class="keyword">WHERE</span> row_num = 1
+  </code></pre>
+</body>
+</html>
