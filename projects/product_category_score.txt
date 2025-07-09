@@ -1,7 +1,40 @@
-SELECT 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formatted SQL Query</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: #f8f8f2;
+      font-family: monospace;
+      padding: 20px;
+    }
+    pre {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .keyword {
+      color: #66d9ef;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>SQL Query</h1>
+  <pre><code>
+<span class="keyword">SELECT</span> 
   product_category_name,
   AVG(review_score) 
-FROM `project-re-learning.Data1.combined_data`
-WHERE product_category_name IS NOT NULL
-GROUP BY product_category_name
-ORDER BY AVG(review_score) DESC
+<span class="keyword">FROM</span> `project-re-learning.Data1.combined_data`
+<span class="keyword">WHERE</span> product_category_name IS NOT NULL
+<span class="keyword">GROUP BY</span> product_category_name
+<span class="keyword">ORDER BY</span> AVG(review_score) DESC
+  </code></pre>
+</body>
+</html>
