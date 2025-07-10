@@ -23,14 +23,16 @@ This is a repository to showcase skills, share projects and track my progress in
 
 **Results:** 
 - [Tableau Dashboard](https://public.tableau.com/views/BrazilianE-CommerceDashboard_17512777652710/OverviewDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-- [Join Query](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/join_duplicate_query.html)
-- [Join Results](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/FINAL%20DATA.xlsx)
-- [RFM Segmentation Query](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/customer_rfm.html)
-- [RFM Segmentation Results](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/customer_rfm.html)
-- [Product Review Score Query](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/product_category_score.html)
-- [Product Review Score Result](https://docs.google.com/spreadsheets/d/1ArwjC95ZEY0t9JHOenbKGsU9CnDUfWRt32Pvc3foCkE/edit?usp=sharing)
-- [Average Shipment Delay Query](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/avg_shipment_delay.html)
-- [Average Shipment Delay Results](https://docs.google.com/spreadsheets/d/1slaP5UJ9w5vcJDjXsmkRxRkcCEjywEE3FrujcGJ7goY/edit?gid=1489341746#gid=1489341746)
+- SQL Query
+  - [Join Query](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/join_duplicate_query.html) 
+  - [RFM Segmentation Query](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/customer_rfm.html)
+  - [Product Review Score Query](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/product_category_score.html)
+  - [Average Shipment Delay Query](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/avg_shipment_delay.html)
+- Google Sheets/Microsoft Excel Results
+  - [Join Results](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/FINAL%20DATA.xlsx)
+  - [RFM Segmentation Results](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/customer_rfm.html)
+  - [Product Review Score Result](https://docs.google.com/spreadsheets/d/1ArwjC95ZEY0t9JHOenbKGsU9CnDUfWRt32Pvc3foCkE/edit?usp=sharing)
+  - [Average Shipment Delay Results](https://docs.google.com/spreadsheets/d/1slaP5UJ9w5vcJDjXsmkRxRkcCEjywEE3FrujcGJ7goY/edit?gid=1489341746#gid=1489341746)
 ## CERTIFICATIONS
 - [Full Stack Data Analytics Certification](https://drive.google.com/file/d/1Yxg-A1tLBHX9NoCPJibPBYEBKAgiFEFA/view?usp=sharing)
 
