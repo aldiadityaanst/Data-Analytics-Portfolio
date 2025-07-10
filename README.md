@@ -33,7 +33,22 @@ This is a repository to showcase skills, share projects and track my progress in
   - [RFM Segmentation Results](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/customer_rfm.html)
   - [Product Review Score Result](https://docs.google.com/spreadsheets/d/1ArwjC95ZEY0t9JHOenbKGsU9CnDUfWRt32Pvc3foCkE/edit?usp=sharing)
   - [Average Shipment Delay Results](https://docs.google.com/spreadsheets/d/1slaP5UJ9w5vcJDjXsmkRxRkcCEjywEE3FrujcGJ7goY/edit?gid=1489341746#gid=1489341746)
-## CERTIFICATIONS
+
+## Education
+- **Universitas Pertamina - Jakarta, Indonesia**
+  Bachelor of Engineering, Civil Engineering
+  (Aug 2016 - Mar 2022)
+
+- **RevoU - Jakarta, Indonesia**
+  Full Stack Data Analytics
+  (Jan 2022 - Aug 2022)
+
+## Certificates
 - [Full Stack Data Analytics Certification](https://drive.google.com/file/d/1Yxg-A1tLBHX9NoCPJibPBYEBKAgiFEFA/view?usp=sharing)
 
 - [HackerRank Basic SQL](https://www.hackerrank.com/certificates/29b54e37bde0)
+
+## Contacts
+- LinkedIn:[@aldiadityaa](linkedin.com/in/aldiadityaa)
+- Email: [aldiaditya.nst@gmail.com](aldiaditya.nst@gmail.com)
+- Whatsapp: +62-821-6748-4884
