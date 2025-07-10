@@ -8,6 +8,6 @@ Driven by curiosity and the desire to turn that interest into a career, I pursue
 
 I believe in the power of hard work over innate talent and am deeply passionate about uncovering valuable business insights from complex datasets. I’m always eager to learn, open to new challenges, and enjoy connecting with others. My adaptability, curiosity, and dedication help me consistently deliver results and go beyond expectations.
 
-My CV (https://github.com/aldiadityaanst/Data-Analytics-Portfolio/blob/main/projects/Resume_AldiAdityaNasution.pdf)
+My CV in [PDF](https://github.com/aldiadityaanst/Data-Analytics-Portfolio/blob/main/projects/Resume_AldiAdityaNasution.pdf)
 
 This is a repository to showcase skills, share projects and track my progress in Data Analytics
