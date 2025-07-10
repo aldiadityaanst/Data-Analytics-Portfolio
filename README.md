@@ -33,6 +33,18 @@ This is a repository to showcase skills, share projects and track my progress in
   - [RFM Segmentation Results](https://aldiadityaanst.github.io/Data-Analytics-Portfolio/projects/customer_rfm.html)
   - [Product Review Score Result](https://docs.google.com/spreadsheets/d/1ArwjC95ZEY0t9JHOenbKGsU9CnDUfWRt32Pvc3foCkE/edit?usp=sharing)
   - [Average Shipment Delay Results](https://docs.google.com/spreadsheets/d/1slaP5UJ9w5vcJDjXsmkRxRkcCEjywEE3FrujcGJ7goY/edit?gid=1489341746#gid=1489341746)
+ 
+### Basic Data Analysis on Python
+**Goal:** The main objective of was to learn how to do data cleaning and EDA using Python code.
+
+**Description:** This project is part of an intermediate assignment from the RevoU Full Stack Data Analytics course, designed to assess students' ability to apply the theories and concepts learned in previous modules. The main challenge lies in how effectively one can accomplish the required tasks using Python code.
+
+**Skills:** Data Cleaning, Data Preparation, Exploratory Data Analysis, Descriptive Statistics, Data Visualization
+
+**Applications:** Python, Google Colab
+
+**Results:** 
+
 
 ## Education
 - **Universitas Pertamina - Jakarta, Indonesia**
