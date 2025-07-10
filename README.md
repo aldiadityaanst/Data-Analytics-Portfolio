@@ -11,3 +11,7 @@ I believe in the power of hard work over innate talent and am deeply passionate 
 My CV in [PDF](https://github.com/aldiadityaanst/Data-Analytics-Portfolio/blob/main/projects/Resume_AldiAdityaNasution.pdf)
 
 This is a repository to showcase skills, share projects and track my progress in Data Analytics
+## CERTIFICATIONS
+- [Full Stack Data Analytics Certification](https://drive.google.com/file/d/1Yxg-A1tLBHX9NoCPJibPBYEBKAgiFEFA/view?usp=sharing)
+
+- [HackerRank Basic SQL](https://www.hackerrank.com/certificates/29b54e37bde0)
