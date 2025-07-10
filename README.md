@@ -50,5 +50,5 @@ This is a repository to showcase skills, share projects and track my progress in
 
 ## Contacts
 - LinkedIn:[@aldiadityaa](https://www.linkedin.com/in/aldiadityaa)
-- Email: [aldiaditya.nst@gmail.com](aldiaditya.nst@gmail.com)
+- Email: aldiaditya.nst@gmail.com
 - Whatsapp: +62-821-6748-4884
