@@ -43,7 +43,7 @@ This is a repository to showcase skills, share projects and track my progress in
 
 **Applications:** Python, Google Colab
 
-**Results:** 
+**Code & Results:** [Python Intermediate Assignment](https://github.com/aldiadityaanst/Data-Analytics-Portfolio/blob/main/projects/W6W7W8_AldiAdityaNasution_Intermediate.ipynb)
 
 
 ## Education
